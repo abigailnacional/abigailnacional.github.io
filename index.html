@@ -33,11 +33,11 @@
         border: 2px solid black;
         padding: 5px;
       }
-      .img-center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+      .center {
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
 </head>
@@ -57,12 +57,12 @@
   <p style = "font-size: 20px; font-family: 'Batang', serif; text-align: center;">I do full-stack web development. I live in Wake Forest, N.C.,
     but I'm currently studying at Duke University. </p>
   <br>
-  <div style = "display: inline-block;">
+  <div class = "center">
     <a href = "templates/projects.html" rel = "import" role = "button" 
-      class = "btn btn-gray">Take a look at my work here.</a>  
+      class = "btn btn-gray">Take a look at my work here.</a>
     <br><br>
     <img src = "/images/home.jpg" alt = "Girl wearing a blue dress looking over her shoulder." 
-    style = "width: 700px; height: 500px;" class = "img-center">
+    style = "width: 700px; height: 500px;">
   </div>
   
 </body>
