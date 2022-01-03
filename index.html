@@ -32,18 +32,13 @@
         font-weight: bold;
         border: 2px solid black;
         padding: 5px;
-      }
-      .left {
-        position: absolute;
-        left: 25%;
-        right: 75%;
+        position:relative
       }
       .center {
         position: absolute;
         left: 50%;
         right: 50%;
-        top: 25%;
-        transform: translate(-50%, -50%);
+        bottom: 50%;
       }
     </style>
 </head>
@@ -59,13 +54,14 @@
     'Abigail Nacional', in black text, is to the right of the logo."
     style = "width: 500px; height: 100px;" float = left;>
   </a>
-  <br>
-  <p style = "font-size: 20px; font-family: 'Batang', serif; text-align: center;">I do full-stack web development. I live in Wake Forest, N.C.,
-    but I'm currently studying at Duke University. </p>
-    <a href = "templates/projects.html" rel = "import" role = "button" 
-    class = "btn btn-gray">Take a look at my work here.</a>
   <br><br>
-  <br>
+  <div style = "position: relative">
+    <p style = "font-size: 20px; font-family: 'Batang', serif; text-align: center;">I do full-stack web development. I live in Wake Forest, N.C.,
+      but I'm currently studying at Duke University. </p>
+    <a href = "templates/projects.html" rel = "import" role = "button" 
+      class = "btn btn-gray">Take a look at my work here.</a>
+    <br>
+  </div>
   <div class = "center">
     <img src = "/images/home.jpg" alt = "Girl wearing a blue dress looking over her shoulder." 
     style = "width: 700px; height: 500px;">
